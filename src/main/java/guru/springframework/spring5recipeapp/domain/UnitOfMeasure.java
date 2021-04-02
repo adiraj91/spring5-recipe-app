@@ -9,8 +9,6 @@ public class UnitOfMeasure {
     private Long id;
 
     private String uom;
-    @OneToOne
-    private Ingredient ingredient;
 
     public Long getId() {
         return id;
@@ -28,11 +26,4 @@ public class UnitOfMeasure {
         this.uom = uom;
     }
 
-    public Ingredient getIngredient() {
-        return ingredient;
-    }
-
-    public void setIngredient(Ingredient ingredient) {
-        this.ingredient = ingredient;
-    }
 }
